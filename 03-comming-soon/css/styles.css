@@ -50,7 +50,7 @@ a, button{ display: inline-block; text-decoration: none; color: inherit; transit
 
 a:focus, a:active, a:hover,
 button:focus, button:active, button:hover,
-a b.light-color:hover{ text-decoration: none; color: #E45F74; }
+a b.light-color:hover{ text-decoration: none; color: #fff; }
 
 b{ font-weight: 500; }
 
@@ -131,4 +131,67 @@ b.light-color{ color: #444; }
 
 	
 .main-area .social-btn > li > a:hover:after{ transform: translateX(100%); }
+
+.social-btn {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-btn li {
+    display: inline-block;
+}
+
+.social-btn a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.social-btn a:hover {
+    color: #00c6ff;
+}
+
+.contact-message {
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    font-size: 40px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1);
+    background-color: #20b954;
+}
+.whatsapp-link:hover {
+    color: inherit;
+}
+
+.logo-container img {
+    max-width: 150px;
+}
 
